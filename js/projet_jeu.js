@@ -165,14 +165,14 @@ function hotel(){
 							Comment pourrais-je vous aider aujourd'hui?
 							<br>
 							<audio controls id='sound'>
-								<source src="./audio/hotel.m4a" type="audio/mpeg">
+								<source src="./audio/Hotel.m4a" type="audio/mpeg">
 						  	</audio>`);
 }
 
 function florist(){
 	$('#messagebox').html("Vous &ecirc;tes chez le fleuriste");
 	$('#interactive').html(`<b>Fleuriste: </b>Bonjour! J'ai des fleurs pour toutes les occassions!
-							<br><img src='./groceries/flowers.png' alt='Les fleurs' height='200' class='img' style='margin-left:100px'>`);
+							<br><img src='./groceries/flowers.PNG' alt='Les fleurs' height='200' class='img' style='margin-left:100px'>`);
 }
 
 function grocery(){
@@ -229,7 +229,7 @@ function currency(){
 function museum(){
 	$('#messagebox').html("Vous &ecirc;tes au Mus&eacute;e de la civilisation");
 	$('#interactive').html(`<b>Guide touristique:</b>Bienvenue &agrave; au Mus&eacute;e de la civilisation! Vous pouvez acheter des billet &agrave; l'entr&eacute;e.
-							<br><img src='./groceries/museum.png' alt='Les tarifs' width='200' class='img'>`);
+							<br><img src='./groceries/museum.PNG' alt='Les tarifs' width='200' class='img'>`);
 }
 
 function bar(){
@@ -239,7 +239,7 @@ function bar(){
 							<br><b>Jean-Pierre: </b>Non, sans toi??
 							<br>...
 							<br><b>Serveur: </b>Bonjour! Le menu est affich&eacute; l&agrave;-bas. Appellez-moi si vous avez des questions!
-							<br><br><img src='./groceries/bar.png' alt='Le menu' height='200'>`);
+							<br><br><img src='./groceries/bar.PNG' alt='Le menu' height='200'>`);
 }
 
 function store(){
