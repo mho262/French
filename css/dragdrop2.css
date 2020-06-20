@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+    font-family: 'Gloria Hallelujah', cursive;
+  }
+  
+  .container {
+    background-color: lightcoral;
+    border: 1px solid black;
+    padding: 2rem;
+    margin-top: 1rem;
+  }
+
+.title{
+    padding: 2rem;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+  
+  .card {
+    padding: 1rem;
+    background-color: white;
+    border: 1px solid black;
+    cursor: move;
+    height: 65px;
+    line-height: 1em;
+  }
+
+  .word{
+      background-color: lightgray;
+  }
+  
+  .draggable.dragging {
+    opacity: 0.5;
+  }
+
+  .match{
+      background-color:lightgreen;
+  }
