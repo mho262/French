@@ -185,7 +185,7 @@ function florist(){
 function grocery(){
 	visit_grocery = true;
 	$('#messagebox').html("Vous &ecirc;tes &agrave; l'&eacute;picerie");
-	$('#interactive').html(`<b>G&eacute;rante:</b> Bienvenue &agrave; votre &eacute;picier de quartier! Nous avons beaucoup de produits frais. Demandez moi si vous avez des questions.
+	$('#interactive').html(`<b>G&eacute;rante:</b> Bienvenue &agrave; votre &eacute;picier de quartier! Nous avons beaucoup de produits frais. N'h&eacute;sitez pas &agrave; me communiquer si vous avez des questions.
 							<div class="food-group" role="group" aria-label="Des produits">
 								<div class="btn-group btn-group-justified">
 									<input type="image" class='btn-food' value="fromage" src="./groceries/fromage.png"/>
@@ -204,7 +204,7 @@ function grocery(){
 function hospital(){
 	$('#messagebox').html("Vous &ecirc;tes &agrave; l'h&ocirc;pital");
 	$('#interactive').html(`<b>Docteur:</b>Bonjour! Alors, qu'est-ce qui ne va pas?
-							<br><b>Moi:</b> Ah, je ne sais pas. Je ne sens pas bien.
+							<br><b>Vous:</b> Ah, je ne sais pas. Je ne sens pas bien.
 							<div class="list-group hospital" aria-labelledby="dropdownMenuButton">
 								<span class='menu-header'>Decrivez votre maladie:</span>
 								<a class="dropdown-item" role="button" value="headache">J'ai mal &agrave; t&ecirc;te</a>
@@ -237,7 +237,7 @@ function currency(){
 
 function museum(){
 	$('#messagebox').html("Vous &ecirc;tes au Mus&eacute;e de la civilisation");
-	$('#interactive').html(`<b>Guide touristique:</b>Bienvenue &agrave; au Mus&eacute;e de la civilisation! Vous pouvez acheter des billet &agrave; l'entr&eacute;e.
+	$('#interactive').html(`<b>Guide touristique:</b>Bienvenue au Mus&eacute;e de la civilisation! Vous pouvez acheter des billet &agrave; l'entr&eacute;e.
 							<br><img src='./groceries/museum.PNG' alt='Les tarifs' width='200' class='img'>`);
 }
 
