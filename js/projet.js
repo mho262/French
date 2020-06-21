@@ -74,7 +74,7 @@ $(document).on("click", ".dropdown-item", function(){
     } else if ($situation.hasClass('hospital')){
 		switch(choice){
 			case "headache":
-				response = "Vous avez besion de repos! Hydratez-vous et me consultez &agrave; nouveau si votre mal de t&ecirc;te s'aggrave."
+				response = "Vous avez besoin de repos! Hydratez-vous et me consultez &agrave; nouveau si votre mal de t&ecirc;te s'aggrave."
 				break;
 			case "flu":
 				response = "Vous avez la grippe. Je vous fais une ordonnance. Prenez ce sirop toutes les 4 heures pendant 3 jours."
@@ -107,7 +107,7 @@ $(document).on("click", ".btn-food", function(){
 			response = "Oui! C'est 14,99$ la livre. Nous les avons import&acute;s de Nouvelle-Z&eacute;lande."
 			break;
 		case "brochettes":
-			you = "Vos <b>brochettes</b>, ils coutent co&ucirc;tent combien?"
+			you = "Vos <b>brochettes</b>, ils co&ucirc;tent combien?"
 			response = "5.99$ la livre."
 			break;
 		case "poivrons":

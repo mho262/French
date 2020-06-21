@@ -179,7 +179,7 @@ function hotel(){
 function florist(){
 	$('#messagebox').html("Vous &ecirc;tes chez le fleuriste");
 	$('#interactive').html(`<b>Fleuriste: </b>Bonjour! J'ai des fleurs pour toutes les occassions!
-							<br><img src='./groceries/flowers.PNG' alt='Les fleurs' height='200' class='img' style='margin-left:100px'>`);
+							<br><img src='./groceries/flowers.PNG' alt='Les fleurs' height='300' class='img' style='margin-left:25px'>`);
 }
 
 function grocery(){
@@ -204,10 +204,10 @@ function grocery(){
 function hospital(){
 	$('#messagebox').html("Vous &ecirc;tes &agrave; l'h&ocirc;pital");
 	$('#interactive').html(`<b>Docteur:</b>Bonjour! Alors, qu'est-ce qui ne va pas?
-							<br><b>Vous:</b> Ah, je ne sais pas. Je ne sens pas bien.
+							<br><b>Vous:</b> Ah, je ne sais pas. Je ne me sens pas bien.
 							<div class="list-group hospital" aria-labelledby="dropdownMenuButton">
 								<span class='menu-header'>Decrivez votre maladie:</span>
-								<a class="dropdown-item" role="button" value="headache">J'ai mal &agrave; t&ecirc;te</a>
+								<a class="dropdown-item" role="button" value="headache">J'ai mal &agrave; la t&ecirc;te</a>
 								<a class="dropdown-item" role="button" value="flu">Je fais de la fi&egrave;vre depuis une semaine, je me sens toujours fatigu&eacute; et je suis courbatur&eacute;</a>
 								<a class="dropdown-item" role="button" value="itchy">J'ai des d&eacute;mangeaisons depuis deux jours!</a>
 							</div>
@@ -244,7 +244,7 @@ function museum(){
 function bar(){
 	visit_bar = true;
 	$('#messagebox').html("Vous &ecirc;tes au bar");
-	$('#interactive').html(`<b>Jean-Pierre: </b>Salut! Quoi de neuf? Tu es en retard, je t'ai attendu pendant une heure!.
+	$('#interactive').html(`<b>Jean-Pierre: </b>Salut! Quoi de neuf? Tu es en retard, je t'ai attendu pendant une heure!
 							<br><b>Vous: </b>Desol&eacute;! Pas mal. Je me suis perdu. Avez-vous command&eacute; quelque chose?
 							<br><b>Jean-Pierre: </b>Non, sans toi??
 							<br>...
@@ -261,9 +261,9 @@ function store(){
 function university(){
 	visit_McGill = true;
 	$('#messagebox').html("Vous &ecirc;tes &agrave; l'universit&eacute; McGill");
-	$('#interactive').html(`<b>Professeur:</b> Bonjour! Comment se passe votre fran&ccedil;ais? Vous &ecirc;tes pr&ecirc;t pour l'examen?
+	$('#interactive').html(`<b>Professeur:</b> Bonjour! Comment se passe votre fran&ccedil;ais? Vous &ecirc;tes pr&ecirc;ts pour l'examen?
 							<br><br><button type='button' class='btn btn-danger' id='btn-openMatchingModal' clientidmode='static'>Les endroits</button>
-							<br><br><button type='button' class='btn btn-danger' id='btn-jeudepairs' clientidmode='static'>Les &eacute;l&eacute;ments de rue</button>
+							<br><br><button type='button' class='btn btn-danger' id='btn-jeudepairs' clientidmode='static'>Les &eacute;l&eacute;ments de la route</button>
 							<br><br><br><i>Note: buttons open pop-up windows, please disable popups. Alternatively all mini-games are accessible through the navigation bar</i>`);
 }
 
