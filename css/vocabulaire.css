@@ -22,3 +22,7 @@ td{
     padding:5px;
     padding-right: 50px;
 }
+
+tr.highlighted{
+    background-color: yellow;
+}

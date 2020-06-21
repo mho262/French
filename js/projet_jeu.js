@@ -349,7 +349,7 @@ Character.prototype.processMovement = function(t)
 			html += `<br><i class='fa ${visit_McGill == true ? "fa-check-square-o" : "fa-square-o"}'></i> L'universit&eacute; McGill`;
 			html += `<br><i class='fa ${visit_bar == true ? "fa-check-square-o" : "fa-square-o"}'></i> Le bar</div>`;
 			
-			console.log(html);	
+			if (visit_notredame && visit_biodome && visit_grocery && visit_McGill && visit_bar) html += "<br></br>Hm...j'ai d&eacute;j&agrave; visit&eacute; tous les endroites sur ma list mais j'ai plus de temps."
 			$('#interactive').html(html);
 		}
 	}

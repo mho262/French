@@ -49,9 +49,9 @@ var vocabArray = vocab.split(";").map(function(item){
 
 var html = $("#vocabTable").html();
 vocabArray.forEach(function(item){
-    html += "<tr>"
+    item.split(" = ")[0] == "avoir un bon sens de l’orientation" ? html += "<tr class='highlighted'>" : html += "<tr>";
     item.split(" = ").forEach(function(i){
-        html += "<td>" + i + "</td>"
+        html += "<td class='item'>" + i + "</td>"
     });
 
     html += "</tr>"
@@ -60,3 +60,7 @@ vocabArray.forEach(function(item){
 $(document).ready(function(){
     $("#vocabTable").html(html);
 })
+
+$(document).on("click", ".item", function(){
+    $(this).parent('tr').toggleClass('highlighted');
+});
