@@ -144,7 +144,7 @@ function restaurant(c){
 
 function information(){
 	$('#messagebox').html("Vous &ecirc;tes &agrave; un bureau d'information touristique");
-	$('#interactive').html(`<b>Gardien de bureau:</b> Comment pourrais-je vous aider?
+	$('#interactive').html(`<b>Guide touristique:</b> Comment pourrais-je vous aider?
 							<br>
 							<div class="list-group information" aria-labelledby="dropdownMenuButton">
 								<span class='menu-header'>Demandez au gardien:</span>

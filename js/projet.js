@@ -51,7 +51,7 @@ $(document).on("click", ".dropdown-item", function(){
                 break;
         }
 
-        $("#response").html("<b>Gardien de bureau:</b><br>" + response)
+        $("#response").html("<b>Guide touristique:</b><br>" + response)
     } else if ($situation.hasClass('airport')){
 		sleep(1000).then(() => {
 			switch (choice){
