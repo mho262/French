@@ -7,12 +7,12 @@ window.addEventListener("keydown", function(e) {
     }
 }, false);
 
-$(window).on('load', function(){
+$(document).ready(function(){
 	name = prompt("Entrez votre nom");
     $("#name").html(name);
     
     $("#nav-placeholder").load("navbar.html");
-})
+});
 
 $(document).on('click', '#btn-openMatchingModal', function(){
     window.open('cardgame.html' ,'_blank');
