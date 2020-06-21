@@ -2,6 +2,12 @@
     player.placeAt(8,3);
 });**/
 
+var visit_McGill = false;
+var visit_grocery = false;
+var visit_biodome = false;
+var visit_bar = false;
+var visit_notredame = false;
+
 var ctx = null;
 var gameMap = [
 	0, 0, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
@@ -152,6 +158,7 @@ function information(){
 }
 
 function biodome(){
+	visit_biodome = true;
 	$('#messagebox').html("Vous &ecirc;tes au bi&ocirc;dome");
 	$('#interactive').html(`<b>Guide touristique: </b>Bienvenue!
 								&Eacute;t&eacute;, comme hiver, le <strong>Biod&ocirc;me de Montr&eacute;al</strong> est la sortie familiale id&eacute;ale! 
@@ -176,6 +183,7 @@ function florist(){
 }
 
 function grocery(){
+	visit_grocery = true;
 	$('#messagebox').html("Vous &ecirc;tes &agrave; l'&eacute;picerie");
 	$('#interactive').html(`<b>G&eacute;rante:</b> Bienvenue &agrave; votre &eacute;picier de quartier! Nous avons beaucoup de produits frais. Demandez moi si vous avez des questions.
 							<div class="food-group" role="group" aria-label="Des produits">
@@ -213,6 +221,7 @@ function court(){
 }
 
 function notredame(){
+	visit_notredame = true;
 	$('#messagebox').html("Vous &ecirc;tes &agrave; la basilique Notre-Dame");
 	$('#interactive').html(`<b>Guide touristique: </b>Bienvenue &agrave; la basilique Notre-Dame!
 								Cette &eacute;glise est la premi&egrave;re &eacute;glise de style n&eacute;o-gothique au Canada. 
@@ -233,6 +242,7 @@ function museum(){
 }
 
 function bar(){
+	visit_bar = true;
 	$('#messagebox').html("Vous &ecirc;tes au bar");
 	$('#interactive').html(`<b>Jean-Pierre: </b>Salut! Quoi de neuf? Tu es en retard, je t'ai attendu pendant une heure!.
 							<br><b>Vous: </b>Desol&eacute;! Pas mal. Je me suis perdu. Avez-vous command&eacute; quelque chose?
@@ -249,6 +259,7 @@ function store(){
 }
 
 function university(){
+	visit_McGill = true;
 	$('#messagebox').html("Vous &ecirc;tes &agrave; l'universit&eacute; McGill");
 	$('#interactive').html(`<b>Professeur:</b> Bonjour! Comment se passe votre fran&ccedil;ais? Vous &ecirc;tes pr&ecirc;t pour l'examen?
 							<br><br><button type='button' class='btn btn-danger' id='btn-openMatchingModal' clientidmode='static'>Les endroits</button>
@@ -328,7 +339,18 @@ Character.prototype.processMovement = function(t)
 			tileEvents[tile](this);
 		} else{
 			$('#messagebox').text("Explorez la ville!");
-			$('#interactive').html("Ahhh Montr&eacute;al!<br>J'ai h&acirc;te d'explorer la ville!");
+
+			var html = `Ahhh Montr&eacute;al!<br>J'ai h&acirc;te d'explorer la ville!
+						<br><br>Quelques endroits que je voudrais visiter:`;
+
+			html += `<div style='margin-left:15px'><i class='fa ${visit_notredame == true ? "fa-check-square-o" : "fa-square-o"}'></i> La basilique Notre-Dame`;
+			html += `<br><i class='fa ${visit_biodome == true ? "fa-check-square-o" : "fa-square-o"}'></i> Le biod&ocirc;me`;
+			html += `<br><i class='fa ${visit_grocery == true ? "fa-check-square-o" : "fa-square-o"}'></i> L'&eacute;picerie`;
+			html += `<br><i class='fa ${visit_McGill == true ? "fa-check-square-o" : "fa-square-o"}'></i> L'universit&eacute; McGill`;
+			html += `<br><i class='fa ${visit_bar == true ? "fa-check-square-o" : "fa-square-o"}'></i> Le bar</div>`;
+			
+			console.log(html);	
+			$('#interactive').html(html);
 		}
 	}
 	else

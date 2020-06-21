@@ -16,6 +16,11 @@ body {
 	padding: 0;
 }
 
+.navbar,
+#nav-placeholder{
+	font-family: 'Gloria Hallelujah', cursive;
+}
+
 body {
 	background: #ffffff;
 	font-family: 'Permanent Marker', cursive;

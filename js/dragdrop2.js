@@ -9,11 +9,23 @@ var key = {
 };
 
 $(window).on('load', function(){
-    $("#nav-placeholder").load("navbar.html");
+    sleep(1000).then($('#def1').popover('show'));
 })  
 
-$(document).ready(function () {
+$('.popover-dismiss').popover({
+    trigger: 'focus'
+})
 
+$(document).on("click", function(){
+    $("#def1").popover("hide");
+})
+
+$(".draggable").on("click", function(){
+    $("#def1").popover("hide");
+});
+
+$(document).ready(function () {
+    $("#nav-placeholder").load("navbar.html");
     var box = $(".draggable");
     var mainCanvas = $(".section");
 
@@ -27,6 +39,7 @@ $(document).ready(function () {
             });
 
             $(".draggable").css("z-index", "0");
+            $("#def1").popover("hide");
         },
 
         stop: function () {
@@ -75,7 +88,6 @@ $(document).ready(function () {
             });
         }
     });
-
 });
 
 function checkOrder(){

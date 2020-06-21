@@ -120,7 +120,7 @@ $(document).on("click", ".btn-food", function(){
 			break;
 	}
 	
-	$("#response").html("<b>Vous: </b>" + you + "<br><b>G&eacute;rante:</b> " + response);
+	$("#response").html("<span style='font-size: small'><b>Vous: </b>" + you + "<br><b>G&eacute;rante:</b> " + response + "</span>");
 });
 
 
