@@ -147,7 +147,7 @@ function information(){
 	$('#interactive').html(`<b>Guide touristique:</b> Comment pourrais-je vous aider?
 							<br>
 							<div class="list-group information" aria-labelledby="dropdownMenuButton">
-								<span class='menu-header'>Demandez au gardien:</span>
+								<span class='menu-header'>Demandez au guide:</span>
 								<a class="dropdown-item" role="button" value="musee">Pourriez-vous me dire o&ugrave; est le Mus&eacute;e de la civilisation?</a>
 								<a class="dropdown-item" role="button" value="restaurant">Est-ce qu'il y a un restaurant fran&ccedil;ais dans le coin?</a>
 								<a class="dropdown-item" role="button" value="biodome">Pourriez-vous me dire o&ugrave; se trouve le bi&ocirc;dome?</a>
