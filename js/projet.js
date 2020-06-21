@@ -43,7 +43,7 @@ $(document).on("click", ".dropdown-item", function(){
                                     <br>Le restaurant sera &agrave; droite.`;
                 break;
             case "biodome":
-				response = `<br>Allez tout droit, puis tournez &agrave; gauche et continuez tout droit &agrave; travers la rivi&egrave;re.
+				response = `Allez tout droit, puis tournez &agrave; gauche et continuez tout droit &agrave; travers la rivi&egrave;re.
                             <br>Continuez tout droit. C'est un peu loin, mais le biod&ocirc; sera &agrave; la fin de la route`;                                    
                 break;
             case "rec":
