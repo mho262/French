@@ -115,7 +115,7 @@ $(document).on("click", ".btn-food", function(){
 			response = "1.99$ la livre."
 			break;
 		case "pain":
-			you = "Votre <b>pain<b/>, il co&ucirc;te combien?"
+			you = "Votre <b>pain</b>, il co&ucirc;te combien?"
 			response = "C'est trois pour cinq piastres!"
 			break;
 	}
