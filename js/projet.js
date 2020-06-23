@@ -26,6 +26,10 @@ $(document).on('click', '#sound', function(){
     $('audio#sound')[0].play();
 })
 
+$(document).on('click', '#playAudio', function(){
+    $('audio')[0].play();
+})
+
 $(document).on("click", ".dropdown-item", function(){
     let choice = $(this).attr('value');
     let $situation = $(this).parent('div');
@@ -69,7 +73,7 @@ $(document).on("click", ".dropdown-item", function(){
 					break;
 			}
 
-			$('#interactive').html("<b>Pilote:</b> Nous sommes arriv&eacute;s &agrave; destination!<br>&emsp;&emsp;&emsp;&emsp;Bon voyage!");
+			$('#interactive').html("<b>Pilote:</b> Nous sommes arriv&eacute;s &agrave; destination!<br>&emsp;&emsp;&emsp;&emsp;Bon voyage!<br><audio id='sound'><source src='../audio/Airport3.m4a' type='audio/mpeg'></audio>");
 		});
     } else if ($situation.hasClass('hospital')){
 		switch(choice){

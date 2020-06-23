@@ -18,6 +18,13 @@ hr{
     border: 1px solid black;
 }
 
+#playAudio{
+    color: black;
+    bottom: 50;
+    right: 50;
+    position: absolute;
+}
+
 #messagebox{
     width: 500px;
     padding-left:5px;
