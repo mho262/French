@@ -73,7 +73,7 @@ $(document).on("click", ".dropdown-item", function(){
 					break;
 			}
 
-			$('#interactive').html("<b>Pilote:</b> Nous sommes arriv&eacute;s &agrave; destination!<br>&emsp;&emsp;&emsp;&emsp;Bon voyage!<br><audio id='sound'><source src='./audio/Airport3.m4a' type='audio/mpeg'></audio>");
+			$('#interactive').html("<b>Pilote:</b> Nous sommes arriv&eacute;s &agrave; destination!<br>&emsp;&emsp;&emsp;&emsp;Bon voyage!<br><audio id='sound'><source src='../audio/Airport3.m4a' type='audio/mpeg'></audio>");
 		});
     } else if ($situation.hasClass('hospital')){
 		switch(choice){

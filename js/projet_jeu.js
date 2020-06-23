@@ -107,7 +107,7 @@ function fly(c){
 						<a class="dropdown-item" role="button" value="centre-ville">L'a&eacute;roport de Centre-Ville</a>
 					</div>
 
-					<audio id='sound'><source src="./audio/Airport1.m4a" type="audio/mpeg"></audio>
+					<audio id='sound'><source src="../audio/Airport1.m4a" type="audio/mpeg"></audio>
 					<div id='response'></div>`;
 	}
 	else if (positionEqual(c.tileTo, [18,17])){
@@ -118,7 +118,7 @@ function fly(c){
 						<a class="dropdown-item" role="button" value="centre-ville">L'a&eacute;roport de Centre-Ville</a>
 					</div>
 
-					<audio id='sound'><source src="./audio/Airport2.m4a" type="audio/mpeg"></audio>
+					<audio id='sound'><source src="../audio/Airport2.m4a" type="audio/mpeg"></audio>
 					<div id='response'></div>`;
 	}
 	else if (positionEqual(c.tileTo, [1,17])){
@@ -129,7 +129,7 @@ function fly(c){
 						<a class="dropdown-item" role="button" value="hubert">L'a&eacute;roport de St-Hubert</a>
 					</div>
 
-					<audio id='sound'><source src="./audio/Airport3.m4a" type="audio/mpeg"></audio>
+					<audio id='sound'><source src="../audio/Airport3.m4a" type="audio/mpeg"></audio>
 					<div id='response'></div>`;
 	}
 
@@ -146,7 +146,7 @@ function restaurant(c){
 
 	$('#interactive').html(`<img src='./groceries/closed.png' alt='Ferm&eacute;' width='200' class='img'>
 	<br><br><br><b>Vous:</b> Ah non le restaurant est ferm&eacute; aujourd'hui! Quel dommage!
-	<br><audio id='sound'><source src="./audio/Restaurant.m4a" type="audio/mpeg"></audio>`);
+	<br><audio id='sound'><source src="../audio/Restaurant.m4a" type="audio/mpeg"></audio>`);
 }
 
 function information(){
@@ -162,7 +162,7 @@ function information(){
 								<a class="dropdown-item" role="button" value="rec">Avez-vous des recommandations?</a>
 							</div>
 							<div id='response'></div>
-							<audio id='sound'><source src="./audio/Information.m4a" type="audio/mpeg"></audio>`)
+							<audio id='sound'><source src="../audio/Information.m4a" type="audio/mpeg"></audio>`)
 }
 
 function biodome(){
@@ -172,7 +172,7 @@ function biodome(){
 								&Eacute;t&eacute;, comme hiver, le <strong>Biod&ocirc;me de Montr&eacute;al</strong> est la sortie familiale id&eacute;ale! 
 								Avec ses cinq &eacute;cosyst&egrave;mes des Am&eacute;riques sous un m&ecirc;me toit, le Biod&ocirc;me se visite comme une balade en nature. 
 							<br><img src='./groceries/biodome.jpg' alt='Le bi&ocirc;dome' height='200' class='img' style='margin-left:100px'>
-							<audio id='sound'><source src="./audio/Biodome.m4a" type="audio/mpeg"></audio>`);
+							<audio id='sound'><source src="../audio/Biodome.m4a" type="audio/mpeg"></audio>`);
 }
 
 function hotel(){
@@ -182,7 +182,7 @@ function hotel(){
 							<br>
 							<img src='./groceries/hotel.jpg' alt='Le couturier' height='250' class='img' style='margin-left:10px'>
 							<audio id='sound'>
-								<source src="./audio/Hotel.m4a" type="audio/mpeg">
+								<source src="../audio/Hotel.m4a" type="audio/mpeg">
 						  	</audio>`);
 }
 
@@ -190,7 +190,7 @@ function florist(){
 	$('#messagebox').html("Vous &ecirc;tes chez le fleuriste");
 	$('#interactive').html(`<b>Fleuriste: </b>Bonjour! J'ai des fleurs pour toutes les occassions!
 							<br><img src='./groceries/flowers.PNG' alt='Les fleurs' height='300' class='img' style='margin-left:25px'>
-							<audio id='sound'><source src="./audio/Florist.m4a" type="audio/mpeg"></audio>`);
+							<audio id='sound'><source src="../audio/Florist.m4a" type="audio/mpeg"></audio>`);
 }
 
 function grocery(){
@@ -210,7 +210,7 @@ function grocery(){
 								</div>
 							</div>
 							<div id='response'></div>
-							<audio id='sound'><source src="./audio/Grocery.m4a" type="audio/mpeg"></audio>`);
+							<audio id='sound'><source src="../audio/Grocery.m4a" type="audio/mpeg"></audio>`);
 }
 
 function hospital(){
@@ -224,14 +224,14 @@ function hospital(){
 								<a class="dropdown-item" role="button" value="itchy">J'ai des d&eacute;mangeaisons depuis deux jours!</a>
 							</div>
 							<div id='response'></div>
-							<audio id='sound'><source src="./audio/Hospital.m4a" type="audio/mpeg"></audio>`);
+							<audio id='sound'><source src="../audio/Hospital.m4a" type="audio/mpeg"></audio>`);
 }
 
 function court(){
 	$('#messagebox').html("Vous &ecirc;tes au palais de Justice");
 	$('#interactive').html(`<img src='./groceries/closed.png' alt='Ferm&eacute;' width='200' class='img'>
 							<br><br><br><b>Vous:</b> Ah non le palais de Justice est ferm&eacute; aujourd'hui! Quel dommage!
-							<audio id='sound'><source src="./audio/Court.m4a" type="audio/mpeg"></audio>`);
+							<audio id='sound'><source src="../audio/Court.m4a" type="audio/mpeg"></audio>`);
 }
 
 function notredame(){
@@ -241,21 +241,21 @@ function notredame(){
 								Cette &eacute;glise est la premi&egrave;re &eacute;glise de style n&eacute;o-gothique au Canada. 
 								Son style architectural a marqu&eacute; un tournant dans la tradition religieuse et a &eacute;t&eacute; imit&eacute; par plusieurs paroisses.
 								<br><img src='./groceries/notredame.jpg' alt='Les tarifs' width='200' class='img'>
-								<audio id='sound'><source src="./audio/Notredame.m4a" type="audio/mpeg"></audio>`);
+								<audio id='sound'><source src="../audio/Notredame.m4a" type="audio/mpeg"></audio>`);
 }
 
 function currency(){
 	$('#messagebox').html("Vous &ecirc;tes au bureau de change");
 	$('#interactive').html(`<img src='./groceries/closed.png' alt='Ferm&eacute;' width='200' class='img'>
 	<br><br><br><b>Vous:</b> Ah non le bureau de change est ferm&eacute; aujourd'hui! Quel dommage!
-	<audio id='sound'><source src="./audio/Currency.m4a" type="audio/mpeg"></audio>`);
+	<audio id='sound'><source src="../audio/Currency.m4a" type="audio/mpeg"></audio>`);
 }
 
 function museum(){
 	$('#messagebox').html("Vous &ecirc;tes au Mus&eacute;e de la civilisation");
 	$('#interactive').html(`<b>Guide touristique:</b>Bienvenue au Mus&eacute;e de la civilisation! Vous pouvez acheter des billet &agrave; l'entr&eacute;e.
 							<br><img src='./groceries/museum.PNG' alt='Les tarifs' width='200' class='img'>
-							<audio id='sound'><source src="./audio/Musee.m4a" type="audio/mpeg"></audio>`);
+							<audio id='sound'><source src="../audio/Musee.m4a" type="audio/mpeg"></audio>`);
 }
 
 function bar(){
@@ -267,7 +267,7 @@ function bar(){
 							<br>...
 							<br><b>Serveur: </b>Bonjour! Le menu est affich&eacute; l&agrave;-bas. Appellez-moi si vous avez des questions!
 							<br><br><img src='./groceries/bar.PNG' alt='Le menu' height='200'>
-							<audio id='sound'><source src="./audio/Bar.m4a" type="audio/mpeg"></audio>`);
+							<audio id='sound'><source src="../audio/Bar.m4a" type="audio/mpeg"></audio>`);
 }
 
 function store(){
@@ -275,7 +275,7 @@ function store(){
 	$('#interactive').html(`<b>Couturier:</b> Bonjour! Je m'occupe de la r&eacute;paration de v&ecirc;tements.
 							Comment pourrais-je vous aider aujourd'hui?
 							<br><img src='./groceries/tailor.png' alt='Le couturier' height='325' class='img' style='margin-left:75px'>
-							<audio id='sound'><source src="./audio/Tailor.m4a" type="audio/mpeg"></audio>`);
+							<audio id='sound'><source src="../audio/Tailor.m4a" type="audio/mpeg"></audio>`);
 }
 
 function university(){
@@ -285,7 +285,7 @@ function university(){
 							<br><br><button type='button' class='btn btn-danger' id='btn-openMatchingModal' clientidmode='static'>Les endroits</button>
 							<br><br><button type='button' class='btn btn-danger' id='btn-jeudepairs' clientidmode='static'>Les &eacute;l&eacute;ments de la route</button>
 							<br><br><br><i>Note: buttons open pop-up windows, please disable popups. Alternatively all mini-games are accessible through the navigation bar</i>
-							<audio id='sound'><source src="./audio/Mcgill.m4a" type="audio/mpeg"></audio>`);
+							<audio id='sound'><source src="../audio/Mcgill.m4a" type="audio/mpeg"></audio>`);
 }
 
 function positionEqual (a, b)
@@ -369,7 +369,7 @@ Character.prototype.processMovement = function(t)
 			html += `<br><i class='fa ${visit_grocery == true ? "fa-check-square-o" : "fa-square-o"}'></i> L'&eacute;picerie`;
 			html += `<br><i class='fa ${visit_McGill == true ? "fa-check-square-o" : "fa-square-o"}'></i> L'universit&eacute; McGill`;
 			html += `<br><i class='fa ${visit_bar == true ? "fa-check-square-o" : "fa-square-o"}'></i> Le bar</div>`;
-			html += `<audio id='sound'><source src="./audio/Main.m4a" type="audio/mpeg"></audio>`;
+			html += `<audio id='sound'><source src="../audio/Main.m4a" type="audio/mpeg"></audio>`;
 			
 			if (visit_notredame && visit_biodome && visit_grocery && visit_McGill && visit_bar) html += "<br></br>Hm...j'ai d&eacute;j&agrave; visit&eacute; tous les endroites sur ma list mais j'ai plus de temps."
 			$('#interactive').html(html);
