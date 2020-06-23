@@ -104,7 +104,7 @@ $(document).on("click", ".btn-food", function(){
 			break;
 		case "homard":
 			you = "Excusez-moi, vous les vendez combien, vos <b>queues de homard</b>?"
-			response = "C'est 11.99$ chacun. Ils viennent de Qu&eacute;bec, ils sont tr&egrave;s frais."
+			response = "C'est 11.99$ chacun. Ils viennent de Qu&eacute;bec, ils<br>sont tr&egrave;s frais."
 			break;
 		case "agneau":
 			you = "Pardon, avez-vous du <b>carr&eacute; d'agneau</b>?"
