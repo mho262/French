@@ -108,7 +108,7 @@ $(document).on("click", ".btn-food", function(){
 			break;
 		case "agneau":
 			you = "Pardon, avez-vous du <b>carr&eacute; d'agneau</b>?"
-			response = "Oui! C'est 14,99$ la livre. Nous les avons import&acute;s de Nouvelle-Z&eacute;lande."
+			response = "Oui! C'est 14,99$ la livre. Nous les avons import&eacute;s de Nouvelle-Z&eacute;lande."
 			break;
 		case "brochettes":
 			you = "Vos <b>brochettes</b>, ils co&ucirc;tent combien?"
