@@ -8,10 +8,22 @@ window.addEventListener("keydown", function(e) {
 }, false);
 
 $(document).ready(function(){
-	name = prompt("Entrez votre nom");
-    $("#name").html(name);
-    
-    $("#nav-placeholder").load("navbar.html");
+	const params = new Proxy(new URLSearchParams(window.location.search), {
+	  get: (searchParams, prop) => searchParams.get(prop),
+	});
+
+	let name;
+
+	if(params.mode != "anonymous"){
+		name = "Friend";
+	}
+	else{
+		name = prompt("Entrez votre nom");
+	}
+
+	$("#name").html(name);
+		    
+	$("#nav-placeholder").load("navbar.html");
 });
 
 $(document).on('click', '#btn-openMatchingModal', function(){
