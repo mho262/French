@@ -14,7 +14,7 @@ $(document).ready(function(){
 
 	let name;
 
-	if(params.mode != "anonymous"){
+	if(params.mode == "anonymous"){
 		name = "Friend";
 	}
 	else{
